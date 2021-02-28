@@ -1,0 +1,31 @@
+# For most projects, this workflow file will not need changing; you simply need
+# to commit it to your repository.
+#
+# You may wish to alter this file to override the set of languages analyzed,
+# or to provide custom queries or build logic.
+#
+# ******** NOTE ********
+# We have attempted to detect the languages in your repository. Please check
+# the `language` matrix defined below to confirm you have the correct set of
+# supported CodeQL languages.
+#
+name: Contiinuous Integration
+on: [push,pull_request]
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+    - name: Set Node.js
+      uses: actions/setup-node@v1.3.0
+      with:
+        node-version: 14.x
+    - name: Install npm and yarn
+      run: npm i npm yarn@1 -g
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+    - name: Lint
+      run: yarn lint
