@@ -16,7 +16,7 @@
     "postinstall": "run-p postinstall:**",
     "lint": "run-p lint:**",
     "lint:eslint": "eslint '**/*.{js,jsx,ts,tsx}' --cache --cache-strategy content",
-    "lint:stylelint": "stylelint '**/**.{jsx,tsx}' --cache",
+    "lint:stylelint": "stylelint 'src/**/**.{jsx,tsx}' --cache",
     "lint:type-check": "tsc -p . --noEmit",
     "postinstall:husky": "is-ci || husky install;",
     "postinstall:pathpida": "pathpida --enableStatic",
