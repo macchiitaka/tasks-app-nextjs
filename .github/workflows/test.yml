@@ -12,11 +12,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-#      - name: Read Node.js version
-#        uses: nodenv/actions-node-version
-#        id: nodenv
+      #      - name: Read Node.js version
+      #        uses: nodenv/actions-node-version
+      #        id: nodenv
       - id: nodenv
         uses: nodenv/actions/node-version
+        with:
+          nodenv-version: '1.3.1'
       - run: echo ${{ steps.nodenv.outputs.node-version }}
       - name: Set Node.js ${{ steps.nodenv.outputs.node-version }}
         uses: actions/setup-node@v2.1.5
