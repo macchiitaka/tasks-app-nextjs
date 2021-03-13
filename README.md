@@ -31,5 +31,5 @@
 - Paas
   - [Dashboard – Vercel](https://vercel.com/dashboard)
 - Others
-  - [typicode/husky: Git hooks made easy 🐶 woof!](https://github.com/typicode/husky)
+  - [toplenboren/simple-git-hooks: A simple git hooks manager for small projects](https://github.com/toplenboren/simple-git-hooks)
   - [okonet/lint-staged: 🚫💩 — Run linters on git staged files](https://github.com/okonet/lint-staged)
