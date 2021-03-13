@@ -19,6 +19,7 @@
     "lint:stylelint": "stylelint \"**/*.{jsx,tsx}\" --cache",
     "lint:type-check": "tsc -p . --noEmit",
     "postinstall:pathpida": "pathpida --enableStatic",
+    "postinstall:simple-git-hooks": "npx simple-git-hooks",
     "start": "next start"
   },
   "dependencies": {
