@@ -8,6 +8,11 @@ type Props = {} & ContainerProps;
 
 export const View: React.VFC<Props> = () => (
   <Styled.Main>
+    {process.browser && (
+      <a href={window.location.href} target="_blank" rel="noreferrer">
+        hoge
+      </a>
+    )}
     <h1>Tasks</h1>
     <NewTaskForm />
     <Styled.DivUListWrapper>
