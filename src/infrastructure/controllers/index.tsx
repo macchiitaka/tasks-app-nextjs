@@ -1,8 +1,10 @@
 import type { GetServerSideProps } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 import type { DehydratedState } from 'react-query';
 import { dehydrate, QueryClient } from 'react-query';
 
+import { staticPath } from '../../../lib/$path';
 import { Page } from '../../interfaces/ui/components/Page';
 import { fetchTasks, taskKeys } from '../../interfaces/ui/queries/tasks';
 
@@ -27,5 +29,11 @@ export const Index: React.VFC<{
       <title>Tasks</title>
     </Head>
     <Page />
+    <Image
+      src={staticPath.mountain_png}
+      alt="Mountain"
+      width={1882}
+      height={1322}
+    />
   </>
 );

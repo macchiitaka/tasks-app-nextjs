@@ -9,7 +9,8 @@ export type PagesPath = typeof pagesPath
 
 // prettier-ignore
 export const staticPath = {
-  favicon_ico: '/favicon.ico'
+  favicon_ico: '/favicon.ico',
+  mountain_png: '/mountain.png'
 } as const
 
 // prettier-ignore
