@@ -14,9 +14,7 @@ const getNextIndex = (crr: number) =>
   crr + 1 > images.length - 1 ? 0 : crr + 1;
 
 export const Images: React.VFC = () => {
-  const [index, setIndex] = useState(() =>
-    getNextIndex(Date.now() % images.length),
-  );
+  const [index, setIndex] = useState(() => Date.now() % images.length);
   const [now, setNow] = useState(() => Date.now());
 
   useEffect(() => {
