@@ -21,6 +21,10 @@ export const getServerSideProps: GetServerSideProps<{
   };
 };
 
+const images = Object.values(staticPath.images).filter((path) =>
+  path.endsWith('.jpg'),
+);
+
 export const Index: React.VFC<{
   dehydratedState: DehydratedState;
 }> = () => (
@@ -29,12 +33,15 @@ export const Index: React.VFC<{
       <title>Tasks</title>
     </Head>
     <Page />
-    <Image
-      src={staticPath.mountain_png}
-      alt="Mountain"
-      width={1882}
-      height={1322}
-      quality={100}
-    />
+    {images.map((path) => (
+      <Image
+        key={path}
+        src={path}
+        alt=""
+        layout="responsive"
+        width={5384}
+        height={3587}
+      />
+    ))}
   </>
 );
