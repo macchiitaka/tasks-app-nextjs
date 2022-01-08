@@ -34,6 +34,7 @@ export const Index: React.VFC<{
       alt="Mountain"
       width={1882}
       height={1322}
+      quality={100}
     />
   </>
 );
