@@ -35,6 +35,19 @@ export class MyDocument extends Document {
       <Html lang="en-US">
         <Head>
           <meta name="Description" content="Tasks" />
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+                '    !function () {\n' +
+                "            if ('TechtouchObject' in window && document.querySelector('script#techtouch-snippet')) return;\n" +
+                '            window.TechtouchObject = {\n' +
+                '            organizationUuid: "orga-612dcbe7-b556-d8fb-2758-41963c269cd7"\n' +
+                '          };\n' +
+                '            var e = document.createElement("script"); e.async = 1, e.src = "https://dev-apps.techtouch.jp/script/orga-612dcbe7-b556-d8fb-2758-41963c269cd7/main.js"; e.id = "techtouch-snippet";\n' +
+                '            var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t)\n' +
+                '          }()',
+            }}
+          />
         </Head>
         <body>
           <Main />
