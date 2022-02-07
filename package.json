@@ -27,7 +27,7 @@
   },
   "resolutions": {
     "browserslist": "^4.19.1",
-    "caniuse-lite": "^1.0.30001305",
+    "caniuse-lite": "^1.0.30001307",
     "immer": "^9.0.12"
   },
   "dependencies": {
@@ -63,7 +63,7 @@
     "@types/react-dom": "17.0.11",
     "@types/react-is": "17.0.3",
     "@types/react-test-renderer": "^17.0.1",
-    "@types/styled-components": "5.1.21",
+    "@types/styled-components": "5.1.22",
     "@types/testing-library__jest-dom": "^5.14.2",
     "@types/testing-library__user-event": "^4.2.0",
     "babel-loader": "^8.2.3",
@@ -75,7 +75,7 @@
     "eslint-plugin-testing-library": "^5.0.5",
     "husky": "7.0.4",
     "is-ci": "3.0.1",
-    "jest": "^27.4.7",
+    "jest": "^27.5.0",
     "lint-staged": "12.3.3",
     "msw": "^0.36.8",
     "msw-storybook-addon": "^1.6.0",
