@@ -36,4 +36,4 @@ jobs:
         id: cpu-cores
         uses: SimenB/github-actions-cpu-cores@v1
       - name: Test
-        run: yarn jest --max-workers ${{ steps.cpu-cores.outputs.count }} --shard=${{ matrix.shard }}
+        run: yarn jest --max-workers=${{ steps.cpu-cores.outputs.count }} --shard=${{ matrix.shard }}
