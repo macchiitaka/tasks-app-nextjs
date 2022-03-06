@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   test:
-    name: Node v${{ matrix.node-version }} on ${{ matrix.os }} (${{ matrix.shard }})
+    name: on ${{ matrix.os }} (${{ matrix.shard }})
     strategy:
       matrix:
         os: [
