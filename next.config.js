@@ -11,7 +11,7 @@ const config = {
   },
   compress: true,
   poweredByHeader: false,
-  swcMinify: true,
+  swcMinify: false,
   compiler: {
     removeConsole: true,
     styledComponents: true,
