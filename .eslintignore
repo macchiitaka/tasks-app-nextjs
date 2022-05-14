@@ -7,4 +7,4 @@
 /src/aws-exports.js
 /storybook-public
 /storybook-static
-/jest.setup.js
+/jest.setup.ts
