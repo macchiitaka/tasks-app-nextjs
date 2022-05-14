@@ -1,9 +1,8 @@
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { ComponentMeta, ComponentStoryObj } from '@storybook/react';
 
 import { View } from './TaskItem';
 
 const meta: ComponentMeta<typeof View> = {
-  title: 'Component/TaskItem',
   component: View,
   args: {
     id: 1,
@@ -15,25 +14,31 @@ const meta: ComponentMeta<typeof View> = {
   parameters: {
     a11y: {
       config: {
-        rules: [{ id: 'listitem', enabled: false }],
+        rules: [
+          {
+            id: 'listitem',
+            enabled: false,
+          },
+        ],
       },
     },
   },
 };
 export default meta;
 
-const Template: ComponentStory<typeof View> = (args) => <View {...args} />;
-
-export const Default = Template.bind({});
-Default.args = {};
-
-export const Done = Template.bind({});
-Done.args = {
-  done: true,
+export const Default: ComponentStoryObj<typeof View> = {
+  args: {},
 };
 
-export const Sample = Template.bind({});
-Sample.args = {
-  done: true,
-  title: 'sample',
+export const Done: ComponentStoryObj<typeof View> = {
+  args: {
+    done: true,
+  },
+};
+
+export const Sample: ComponentStoryObj<typeof View> = {
+  args: {
+    done: true,
+    title: 'sample',
+  },
 };

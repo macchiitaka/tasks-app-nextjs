@@ -1,5 +1,5 @@
 import { expect } from '@storybook/jest';
-import type { ComponentMeta, ComponentStory } from '@storybook/react';
+import type { ComponentMeta, ComponentStoryObj } from '@storybook/react';
 import { userEvent, waitFor, within } from '@storybook/testing-library';
 
 import {
@@ -9,59 +9,60 @@ import {
 import { TaskList } from './TaskList';
 
 const meta: ComponentMeta<typeof TaskList> = {
-  title: 'Component/TaskList',
   component: TaskList,
 };
 export default meta;
 
-const Template: ComponentStory<typeof TaskList> = (args) => (
-  <TaskList {...args} />
-);
-
-export const Default = Template.bind({});
-Default.parameters = {
-  msw: {
-    handlers: [getFetchTasksHandlers()],
+export const Default: ComponentStoryObj<typeof TaskList> = {
+  parameters: {
+    msw: {
+      handlers: [getFetchTasksHandlers()],
+    },
   },
 };
 
-export const Error = Template.bind({});
-Error.parameters = {
-  msw: {
-    handlers: [getFetchTasksErrorHandlers()],
+export const Error: ComponentStoryObj<typeof TaskList> = {
+  parameters: {
+    msw: {
+      handlers: [getFetchTasksErrorHandlers()],
+    },
   },
 };
 
-export const ClickFirstCheckbox = Template.bind({});
-ClickFirstCheckbox.parameters = {
-  msw: {
-    handlers: [getFetchTasksHandlers()],
+export const ClickFirstCheckbox: ComponentStoryObj<typeof TaskList> = {
+  parameters: {
+    msw: {
+      handlers: [getFetchTasksHandlers()],
+    },
+  },
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const checkbox = await canvas.findByRole('checkbox', {
+      name: 'TODO_01',
+    });
+    await userEvent.click(checkbox);
   },
 };
-ClickFirstCheckbox.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement);
-  const checkbox = await canvas.findByRole('checkbox', { name: 'TODO_01' });
-  await userEvent.click(checkbox);
-};
 
-export const TestToggleFirstCheckbox = Template.bind({});
-TestToggleFirstCheckbox.parameters = {
-  msw: {
-    handlers: [getFetchTasksHandlers()],
+export const TestToggleFirstCheckbox: ComponentStoryObj<typeof TaskList> = {
+  parameters: {
+    msw: {
+      handlers: [getFetchTasksHandlers()],
+    },
   },
-};
-TestToggleFirstCheckbox.play = async ({ canvasElement }) => {
-  const canvas = within(canvasElement);
-  const checkbox = await canvas.findByRole('checkbox', { name: 'TODO_01' });
-  expect(checkbox).not.toBeChecked();
-
-  await userEvent.click(checkbox);
-  await waitFor(async () => {
-    await expect(checkbox).toBeChecked();
-  });
-
-  await userEvent.click(checkbox);
-  await waitFor(async () => {
-    await expect(checkbox).not.toBeChecked();
-  });
+  play: async ({ canvasElement }) => {
+    const canvas = within(canvasElement);
+    const checkbox = await canvas.findByRole('checkbox', {
+      name: 'TODO_01',
+    });
+    expect(checkbox).not.toBeChecked();
+    await userEvent.click(checkbox);
+    await waitFor(async () => {
+      await expect(checkbox).toBeChecked();
+    });
+    await userEvent.click(checkbox);
+    await waitFor(async () => {
+      await expect(checkbox).not.toBeChecked();
+    });
+  },
 };
