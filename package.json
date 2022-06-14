@@ -10,7 +10,7 @@
     "dev:next": "next dev",
     "dev:path": "pathpida --enableStatic --watch",
     "fmt": "run-s fmt:prettier fmt:package-json fmt:next",
-    "fmt:prettier": "prettier --write --tab-width 2 \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md}\"",
+    "fmt:prettier": "prettier --write --cache --tab-width 2 \"**/*.{js,jsx,ts,tsx,json,yml,yaml,md}\"",
     "fmt:next": "next lint --dir src --dir pages --cache --cache-strategy content --report-unused-disable-directives error --fix",
     "fmt:package-json": "sort-package-json",
     "postinstall": "run-p postinstall:**",
