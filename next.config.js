@@ -4,6 +4,7 @@
 const config = {
   experimental: {
     esmExternals: true,
+    runtime: 'experimental-edge',
   },
   typescript: {
     ignoreDevErrors: true,
