@@ -14,8 +14,10 @@ export const getTaskAll = async () =>
 export const getTask = async (params: { id: number }) =>
   http.get<TaskRecord>(`/tasks/${params.id}`);
 
-export const createTask = async (_: {}, data: { title: string }) =>
-  http.post<TaskRecord>('/tasks', data);
+export const createTask = async (
+  _: { [key: string]: never },
+  data: { title: string },
+) => http.post<TaskRecord>('/tasks', data);
 
 export const updateTask = async (
   params: { id: number },

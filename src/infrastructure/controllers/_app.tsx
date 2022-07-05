@@ -9,7 +9,7 @@ import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from '../../interfaces/ui/style/GlobalStyle';
 import { theme } from '../../interfaces/ui/style/theme';
 
-type GetConstructorArgs<T> = T extends new (...args: infer U) => any
+type GetConstructorArgs<T> = T extends new (...args: infer U) => unknown
   ? U
   : never;
 

@@ -4,13 +4,11 @@ import styled from 'styled-components';
 
 import { useSubmitHandler } from './hook';
 
-type ContainerProps = {};
-
 type Props = {
   value: string;
   onChangeText(e: ChangeEvent<HTMLInputElement>): void;
   onSubmit(e: FormEvent<HTMLFormElement>): void;
-} & ContainerProps;
+};
 
 export const View: React.FC<Props> = ({ value, onChangeText, onSubmit }) => (
   <Form onSubmit={onSubmit}>
@@ -30,7 +28,7 @@ export const View: React.FC<Props> = ({ value, onChangeText, onSubmit }) => (
   </Form>
 );
 
-export const NewTaskForm: React.FC<ContainerProps> = (props) => {
+export const NewTaskForm: React.FC = (props) => {
   const [value, setValue] = useState('');
 
   const handleChangeText = useCallback((e: ChangeEvent<HTMLInputElement>) => {

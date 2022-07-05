@@ -6,13 +6,11 @@ import type { TaskModel } from '../../../../domain/models/task-model';
 import { fetchTasks, taskKeys } from '../../queries/tasks';
 import { TaskItem } from '../TaskItem';
 
-type ContainerProps = {};
-
 type Props = {
   isLoading: boolean;
   isError: boolean;
   data: TaskModel[] | undefined;
-} & ContainerProps;
+};
 
 const TaskLIMemoized = memo(TaskItem);
 
@@ -38,7 +36,7 @@ export const View: React.FC<Props> = (props) => (
   </>
 );
 
-export const TaskList: React.FC<ContainerProps> = (props) => {
+export const TaskList: React.FC = (props) => {
   const { isLoading, isError, data } = useQuery(taskKeys.list(), fetchTasks);
 
   return (
