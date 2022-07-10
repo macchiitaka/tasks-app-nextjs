@@ -12,5 +12,6 @@ export type Response<T> = Promise<
 >;
 
 export const isAxiosError = (err: Error): err is AxiosError =>
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-expect-error
   Boolean(err.isAxiosError);
