@@ -1,6 +1,6 @@
+import { useMutation, useQueryClient } from '@tanstack/react-query';
 import type { ChangeEvent } from 'react';
 import { useCallback } from 'react';
-import { useMutation, useQueryClient } from 'react-query';
 
 import type { TaskModel } from '../../../../domain/models/task-model';
 import { deleteTask, taskKeys, updateTask } from '../../queries/tasks';
