@@ -1,9 +1,13 @@
+import type { DehydratedState } from '@tanstack/react-query';
+import {
+  Hydrate,
+  QueryClient,
+  QueryClientProvider,
+} from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import type { AppProps } from 'next/app';
 import type { FC } from 'react';
 import { useEffect, useMemo } from 'react';
-import type { DehydratedState } from 'react-query';
-import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyle } from '../../interfaces/ui/style/GlobalStyle';
