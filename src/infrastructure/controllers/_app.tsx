@@ -102,8 +102,8 @@ export const MyApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <Provider
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-      dehydratedState={pageProps.dehydratedState}
+      // @ts-expect-error FIXME
+      dehydratedState={pageProps.dehydratedState} // eslint-disable-line @typescript-eslint/no-unsafe-assignment
     >
       <Component {...pageProps} />
     </Provider>

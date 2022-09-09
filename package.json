@@ -34,7 +34,7 @@
   "dependencies": {
     "@tanstack/react-query": "^4.2.3",
     "axios": "0.27.2",
-    "next": "12.2.5",
+    "next": "12.3.0",
     "plausible-tracker": "^0.3.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -81,7 +81,7 @@
     "babel-loader": "^8.2.5",
     "csstype": "^3.1.0",
     "eslint": "^8.23.0",
-    "eslint-config-next": "^12.2.5",
+    "eslint-config-next": "^12.3.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-jest": "^27.0.1",
     "eslint-plugin-jest-dom": "^4.0.2",
