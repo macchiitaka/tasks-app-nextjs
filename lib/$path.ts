@@ -8,6 +8,9 @@ export const pagesPath = {
   "height": {
     $url: (url?: { hash?: string }) => ({ pathname: '/height' as const, hash: url?.hash })
   },
+  "hydration": {
+    $url: (url?: { hash?: string }) => ({ pathname: '/hydration' as const, hash: url?.hash })
+  },
   "lvh": {
     $url: (url?: { hash?: string }) => ({ pathname: '/lvh' as const, hash: url?.hash })
   },
