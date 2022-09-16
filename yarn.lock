@@ -3006,10 +3006,10 @@
     read-pkg-up "^7.0.1"
     regenerator-runtime "^0.13.7"
 
-"@storybook/test-runner@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.7.1.tgz#ec4058ce24db76f897f195744c34603847912899"
-  integrity sha512-7VYDGneZEX9aA7+nMkCvtsoTSOCTN1G3zNaacEHcD3b4/YrkFb++GHE43TnholoJ53aRUZw3YL85EPBsgo+V2Q==
+"@storybook/test-runner@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@storybook/test-runner/-/test-runner-0.7.2.tgz#d95523c14ba1e89398c17e0d0ecfc44b439cbe68"
+  integrity sha512-3BaI7c1Hpzank/iUVHOb8+mc3qqHwS16G756x0mhHl6C/EGCnjsshfI7SfgjIyK2KYZ726+YSN0f2utREXrKVQ==
   dependencies:
     "@babel/core" "^7.18.13"
     "@babel/generator" "^7.18.13"
