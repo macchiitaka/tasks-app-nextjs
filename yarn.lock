@@ -3099,25 +3099,25 @@
   dependencies:
     remove-accents "0.4.2"
 
-"@tanstack/query-core@4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.4.0.tgz#23e995af1543e38022e4b7e19164cf654c6da720"
-  integrity sha512-YMJ1PWVfnLbQ9GPqPb9yniHKH0XKQgcjYNJuWyw47OWn9tTvvG16Muq3B6aTjKj3ce6cl1imBHoDUIbvK8PqXQ==
+"@tanstack/query-core@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.5.0.tgz#eeb0f290adb34f8682f65ebfce4e74709f3ae130"
+  integrity sha512-9pHE4TNlnBxdF24bTH3GGAJ4JdIDfJyuE/q+snyV425XEimPDe+OfofM8mVHfrn01Spvk9xAMpbqoEcmQG4kMg==
 
-"@tanstack/react-query-devtools@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-4.4.0.tgz#c0f84b0cd35ff7789245c91425b83226da081c09"
-  integrity sha512-OBOKk08fyW+zkxMLRFSiRUjF4IImDvudryFknaKx4WaDb/L1NrX57EDLvKgClr/0UQPFeF6NsLWknzDjXZ6m8Q==
+"@tanstack/react-query-devtools@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query-devtools/-/react-query-devtools-4.5.0.tgz#66e68a73330dc243a16ece2b8abdef89feed6924"
+  integrity sha512-eISF7VHIXDGk7lCTi1+NXDGh+tz114ZszA7icQ0ov1XE3fBhgiE9Yt9JW9l2zjklREYNZ3PtG4/hmiLC61pt0g==
   dependencies:
     "@tanstack/match-sorter-utils" "^8.1.1"
     use-sync-external-store "^1.2.0"
 
-"@tanstack/react-query@^4.4.0":
-  version "4.4.0"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.4.0.tgz#824e58b0e43da6decab4cd7d6a432f08f9ac3fd7"
-  integrity sha512-z5DuDXUHiBAIHIef2LJDmApkUo3wKf0ONJY9astnkiSpnfxJemG3JyF63wtKZkcoQ0LxJmU2Vdk1hFWpSt0UkA==
+"@tanstack/react-query@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.5.0.tgz#566fbf4286a075d74cce32859ecfaafd11cb2d89"
+  integrity sha512-58JRis0+1hdKe37L7ZAJex849mlqhBvpNwlOjz6KzEMXHH/b0AyUHp1YIqn6ULiw7YpZiheYpCkdB/7ArIgfrg==
   dependencies:
-    "@tanstack/query-core" "4.4.0"
+    "@tanstack/query-core" "4.5.0"
     use-sync-external-store "^1.2.0"
 
 "@testing-library/dom@^8.11.1", "@testing-library/dom@^8.18.1", "@testing-library/dom@^8.3.0", "@testing-library/dom@^8.5.0":
