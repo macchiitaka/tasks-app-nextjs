@@ -26,6 +26,7 @@ module.exports = {
     eqeqeq: ['error', 'always'],
     'guard-for-in': 'error',
     'lines-between-class-members': 'error',
+    'logical-assignment-operators': 'error',
     'max-depth': 'error',
     'max-nested-callbacks': ['error', 5],
     'max-params': ['error', 7],
