@@ -47,19 +47,16 @@ export const Images: React.FC = () => {
         loading="eager"
       />
       <Link href={pagesPath.tasks.$url()} passHref>
-        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-        <a>
-          <StyledTime dateTime={date.toISOString()}>
-            {new Intl.DateTimeFormat('en-US', {
-              year: 'numeric',
-              month: 'short',
-              day: '2-digit',
-              hour: '2-digit',
-              minute: '2-digit',
-              second: '2-digit',
-            }).format(date)}
-          </StyledTime>
-        </a>
+        <StyledTime dateTime={date.toISOString()}>
+          {new Intl.DateTimeFormat('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: '2-digit',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+          }).format(date)}
+        </StyledTime>
       </Link>
     </>
   );
