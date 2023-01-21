@@ -29,7 +29,7 @@
   "resolutions": {
     "browserslist": "^4.21.4",
     "caniuse-lite": "^1.0.30001446",
-    "immer": "^9.0.17"
+    "immer": "^9.0.18"
   },
   "dependencies": {
     "@tanstack/react-query": "^4.22.0",
