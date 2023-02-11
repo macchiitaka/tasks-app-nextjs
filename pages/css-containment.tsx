@@ -13,7 +13,7 @@ const cssContains: Array<CSS.Properties['contain']> = [
 ];
 
 const descriptionMap = new Map<
-  typeof cssContains[keyof typeof cssContains],
+  (typeof cssContains)[keyof typeof cssContains],
   string
 >([
   ['size', '子孫要素のサイズの計算を省略する'],

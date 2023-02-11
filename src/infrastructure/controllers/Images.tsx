@@ -67,7 +67,7 @@ const StyledTime = styled.time`
   font-size: 8vw;
   color: white;
   text-align: center;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0 10px rgb(0 0 0 / 40%);
   position: fixed;
   left: 50%;
   top: 50%;
