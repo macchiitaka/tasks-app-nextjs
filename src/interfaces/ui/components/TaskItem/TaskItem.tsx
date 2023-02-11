@@ -90,7 +90,7 @@ const Button = styled.button`
   cursor: pointer;
 
   &:is(:hover, :focus) {
-    color: ${(props) => props.theme.color.white};
     background-color: ${(props) => props.theme.color.black};
+    color: ${(props) => props.theme.color.white};
   }
 `;
