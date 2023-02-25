@@ -108,7 +108,7 @@
     "react-test-renderer": "^18.2.0",
     "sleep-promise": "^9.1.0",
     "sort-package-json": "2.4.1",
-    "storybook-addon-next": "^1.7.1",
+    "storybook-addon-next": "^1.7.2",
     "stylelint": "^15.1.0",
     "stylelint-a11y": "^1.2.3",
     "stylelint-config-property-sort-order-smacss": "9.0.0",
