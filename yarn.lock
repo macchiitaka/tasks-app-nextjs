@@ -12157,10 +12157,10 @@ postcss-sorting@^7.0.1:
   resolved "https://registry.yarnpkg.com/postcss-sorting/-/postcss-sorting-7.0.1.tgz#923b5268451cf2d93ebf8835e17a6537757049a5"
   integrity sha512-iLBFYz6VRYyLJEJsBJ8M3TCqNcckVzz4wFounSc5Oez35ogE/X+aoC5fFu103Ot7NyvjU3/xqIXn93Gp3kJk4g==
 
-postcss-styled-syntax@^0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/postcss-styled-syntax/-/postcss-styled-syntax-0.3.2.tgz#fa68042b0863334b36928abae7ecf058c01add3a"
-  integrity sha512-JLv8cg+R59Lr8TGbHlFwSyjDbQunECkvR30yoMi7H39FE4K9+Qt2V3isdBEZ7TSEUq/zStbvpamJUxtn5G0U1g==
+postcss-styled-syntax@^0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/postcss-styled-syntax/-/postcss-styled-syntax-0.3.3.tgz#f6224d719b5b77a1bc3e6aab85c70f51548d9fea"
+  integrity sha512-TyoKQNPK4r2Ua7eeL2IdwXShIajO6svQMVtUSezxe1Ru3eNM1TJE+IxU82lTnUBX/sBQjY5TUtI69bZaoXjRpg==
   dependencies:
     "@typescript-eslint/typescript-estree" "^5.47.0"
     estree-walker "^2.0.2"
