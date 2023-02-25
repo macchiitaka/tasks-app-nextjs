@@ -84,9 +84,9 @@ const Input = styled.input`
 
 const Button = styled.button`
   padding: 8px 12px;
-  color: ${(props) => props.theme.color.black};
-  background-color: ${(props) => props.theme.color.white};
   border: solid 1px ${(props) => props.theme.color.black};
+  background-color: ${(props) => props.theme.color.white};
+  color: ${(props) => props.theme.color.black};
   cursor: pointer;
 
   &:is(:hover, :focus) {
