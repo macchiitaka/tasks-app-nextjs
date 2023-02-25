@@ -63,14 +63,14 @@ export const Images: React.FC = () => {
 };
 
 const StyledTime = styled.time`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
   font-family: 'Fjalla One', sans-serif;
   font-size: 8vw;
-  color: white;
   text-align: center;
   text-shadow: 0 0 10px rgb(0 0 0 / 40%);
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%);
   cursor: pointer;
 `;

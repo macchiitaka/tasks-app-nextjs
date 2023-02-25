@@ -88,20 +88,20 @@ const StyledChild = styled.div`
 
 const StyledFixedElement = styled.div`
   position: fixed;
-  background-color: green;
-  width: 100px;
-  height: 100px;
   right: 20px;
   bottom: 0;
+  width: 100px;
+  height: 100px;
+  background-color: green;
   ${fontStyle}
 `;
 
 const StyledAbsoluteElement = styled.div`
   position: absolute;
-  background-color: orange;
-  width: 100px;
-  height: 100px;
   right: 10px;
   bottom: -50px;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
   ${fontStyle}
 `;
