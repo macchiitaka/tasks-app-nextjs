@@ -14,7 +14,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "importHelpers": true,
-    "importsNotUsedAsValues": "error",
     "incremental": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
