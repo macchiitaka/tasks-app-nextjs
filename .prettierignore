@@ -4,3 +4,4 @@
 *.d.ts
 !.*rc.js
 /storybook-static
+/storybook-public
