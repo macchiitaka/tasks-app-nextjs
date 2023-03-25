@@ -104,7 +104,7 @@
     "postcss-jsx": "^0.36.4",
     "postcss-styled-syntax": "^0.4.0",
     "postcss-syntax": "^0.36.2",
-    "prettier": "2.8.4",
+    "prettier": "2.8.7",
     "react-test-renderer": "^18.2.0",
     "sleep-promise": "^9.1.0",
     "sort-package-json": "2.4.1",
