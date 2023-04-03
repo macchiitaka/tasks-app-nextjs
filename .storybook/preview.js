@@ -28,7 +28,7 @@ export const decorators = [
       <Story />
     </Provider>
   ),
+  mswDecorator,
 ];
 
 initialize();
-addDecorator(mswDecorator);

@@ -5,20 +5,22 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-a11y',
     '@storybook/addon-interactions',
-    'storybook-addon-next',
   ],
-  framework: '@storybook/react',
-  core: {
-    builder: 'webpack5',
+  framework: {
+    name: '@storybook/nextjs',
+    options: {
+      fastRefresh: true,
+    },
   },
   typescript: {
     check: false,
     reactDocgen: false,
   },
-  reactOptions: {
-    fastRefresh: true,
-  },
   features: {
     interactionsDebugger: true,
   },
+  docs: {
+    autodocs: true,
+  },
+  staticDirs: ['../storybook-public'],
 };

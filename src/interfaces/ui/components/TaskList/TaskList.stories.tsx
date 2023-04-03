@@ -1,5 +1,5 @@
 import { expect } from '@storybook/jest';
-import type { ComponentMeta, ComponentStoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 import { userEvent, waitFor, within } from '@storybook/testing-library';
 
 import {
@@ -8,12 +8,12 @@ import {
 } from '../../../../../msw/handlers';
 import { TaskList } from './TaskList';
 
-const meta: ComponentMeta<typeof TaskList> = {
+const meta: Meta<typeof TaskList> = {
   component: TaskList,
 };
 export default meta;
 
-export const Default: ComponentStoryObj<typeof TaskList> = {
+export const Default: StoryObj<typeof TaskList> = {
   parameters: {
     msw: {
       handlers: [getFetchTasksHandlers()],
@@ -21,7 +21,7 @@ export const Default: ComponentStoryObj<typeof TaskList> = {
   },
 };
 
-export const Error: ComponentStoryObj<typeof TaskList> = {
+export const Error: StoryObj<typeof TaskList> = {
   parameters: {
     msw: {
       handlers: [getFetchTasksErrorHandlers()],
@@ -29,7 +29,7 @@ export const Error: ComponentStoryObj<typeof TaskList> = {
   },
 };
 
-export const ClickFirstCheckbox: ComponentStoryObj<typeof TaskList> = {
+export const ClickFirstCheckbox: StoryObj<typeof TaskList> = {
   parameters: {
     msw: {
       handlers: [getFetchTasksHandlers()],
@@ -44,7 +44,7 @@ export const ClickFirstCheckbox: ComponentStoryObj<typeof TaskList> = {
   },
 };
 
-export const TestToggleFirstCheckbox: ComponentStoryObj<typeof TaskList> = {
+export const TestToggleFirstCheckbox: StoryObj<typeof TaskList> = {
   parameters: {
     msw: {
       handlers: [getFetchTasksHandlers()],
