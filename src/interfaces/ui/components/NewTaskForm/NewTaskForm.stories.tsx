@@ -1,8 +1,8 @@
-import type { ComponentMeta, ComponentStoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import { View } from './NewTaskForm';
 
-const meta: ComponentMeta<typeof View> = {
+const meta: Meta<typeof View> = {
   component: View,
   args: {
     value: '',
@@ -10,6 +10,6 @@ const meta: ComponentMeta<typeof View> = {
 };
 export default meta;
 
-export const Default: ComponentStoryObj<typeof View> = {
+export const Default: StoryObj<typeof View> = {
   args: {},
 };

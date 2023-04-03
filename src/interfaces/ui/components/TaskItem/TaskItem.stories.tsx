@@ -1,8 +1,8 @@
-import type { ComponentMeta, ComponentStoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import { View } from './TaskItem';
 
-const meta: ComponentMeta<typeof View> = {
+const meta: Meta<typeof View> = {
   component: View,
   args: {
     id: 1,
@@ -26,17 +26,17 @@ const meta: ComponentMeta<typeof View> = {
 };
 export default meta;
 
-export const Default: ComponentStoryObj<typeof View> = {
+export const Default: StoryObj<typeof View> = {
   args: {},
 };
 
-export const Done: ComponentStoryObj<typeof View> = {
+export const Done: StoryObj<typeof View> = {
   args: {
     done: true,
   },
 };
 
-export const Sample: ComponentStoryObj<typeof View> = {
+export const Sample: StoryObj<typeof View> = {
   args: {
     done: true,
     title: 'sample',
