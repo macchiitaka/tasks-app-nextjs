@@ -65,7 +65,7 @@
     "@types/babel__core": "^7.20.0",
     "@types/eslint": "^8.37.0",
     "@types/is-ci": "3.0.0",
-    "@types/node": "^16.18.23",
+    "@types/node": "^16.18.24",
     "@types/prettier": "2.7.2",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
