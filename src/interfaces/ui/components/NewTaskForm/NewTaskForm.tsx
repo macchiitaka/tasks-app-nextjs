@@ -1,6 +1,6 @@
 import type { ChangeEvent, FormEvent } from 'react';
 import { useCallback, useState } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import { useSubmitHandler } from './hook';
 

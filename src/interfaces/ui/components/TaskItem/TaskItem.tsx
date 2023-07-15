@@ -1,5 +1,5 @@
 import type { ChangeEvent } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import type { TaskModel } from '../../../../domain/models/task-model';
 import { useChangeDoneHandler, useClickDeleteHandler } from './hook';
@@ -69,6 +69,7 @@ const LI = styled.li`
 `;
 
 const Label = styled.label`
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
   overflow: hidden;
   color: ${(props) => props.theme.color.black};
   text-overflow: ellipsis;
