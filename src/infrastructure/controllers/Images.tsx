@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import { pagesPath, staticPath } from '../../../lib/$path';
 

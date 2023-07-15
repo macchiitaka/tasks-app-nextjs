@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 export const SelectiveHydration: React.FC = () => {
   const [currentTime, setCurrentTime] = useState(0);

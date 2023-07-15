@@ -1,6 +1,6 @@
 import type * as CSS from 'csstype';
 import { Fragment, useState } from 'react';
-import styled, { css } from 'styled-components';
+import { css, styled } from 'styled-components';
 
 const cssContains: Array<CSS.Properties['contain']> = [
   'none',

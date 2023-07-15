@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { memo } from 'react';
-import styled from 'styled-components';
+import { styled } from 'styled-components';
 
 import type { TaskModel } from '../../../../domain/models/task-model';
 import { fetchTasks, taskKeys } from '../../queries/tasks';
