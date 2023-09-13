@@ -52,7 +52,7 @@
     "@storybook/addon-links": "^7.0.27",
     "@storybook/addons": "7.0.27",
     "@storybook/client-api": "7.0.27",
-    "@storybook/jest": "^0.1.0",
+    "@storybook/jest": "^0.2.2",
     "@storybook/nextjs": "^7.0.27",
     "@storybook/preview-web": "7.0.27",
     "@storybook/react": "^7.0.27",
