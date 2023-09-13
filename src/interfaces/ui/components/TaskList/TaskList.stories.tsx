@@ -55,7 +55,7 @@ export const TestToggleFirstCheckbox: StoryObj<typeof TaskList> = {
     const checkbox = await canvas.findByRole('checkbox', {
       name: 'TODO_01',
     });
-    expect(checkbox).not.toBeChecked();
+    await expect(checkbox).not.toBeChecked();
     await userEvent.click(checkbox);
     await waitFor(async () => {
       await expect(checkbox).toBeChecked();
