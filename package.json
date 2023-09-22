@@ -27,7 +27,7 @@
     "test-storybook": "test-storybook"
   },
   "resolutions": {
-    "browserslist": "^4.21.10",
+    "browserslist": "^4.21.11",
     "caniuse-lite": "^1.0.30001538",
     "immer": "^10.0.2"
   },
