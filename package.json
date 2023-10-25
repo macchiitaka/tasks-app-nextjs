@@ -28,7 +28,7 @@
   },
   "resolutions": {
     "browserslist": "^4.22.1",
-    "caniuse-lite": "^1.0.30001553",
+    "caniuse-lite": "^1.0.30001554",
     "immer": "^10.0.3"
   },
   "dependencies": {
