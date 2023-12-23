@@ -109,7 +109,7 @@
     "storybook": "^7.0.27",
     "stylelint": "^15.11.0",
     "stylelint-a11y": "^1.2.3",
-    "stylelint-config-property-sort-order-smacss": "9.1.0",
+    "stylelint-config-property-sort-order-smacss": "10.0.0",
     "stylelint-config-standard": "34.0.0",
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-no-unsupported-browser-features": "^7.0.0",
