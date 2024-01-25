@@ -116,7 +116,7 @@
     "ts-node": "^10.9.2",
     "typescript": "5.3.3",
     "utility-types": "3.11.0",
-    "webpack": "^5.89.0"
+    "webpack": "^5.90.0"
   },
   "packageManager": "yarn@1.22.21",
   "engines": {
