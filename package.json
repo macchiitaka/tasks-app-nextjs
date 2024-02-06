@@ -98,7 +98,7 @@
     "npm-run-all2": "6.1.2",
     "pathpida": "0.22.0",
     "pinst": "3.0.0",
-    "postcss": "^8.4.33",
+    "postcss": "^8.4.34",
     "postcss-jsx": "^0.36.4",
     "postcss-styled-syntax": "^0.6.4",
     "postcss-syntax": "^0.36.2",
