@@ -118,7 +118,7 @@
     "utility-types": "3.11.0",
     "webpack": "^5.90.3"
   },
-  "packageManager": "yarn@1.22.21",
+  "packageManager": "yarn@1.22.22",
   "engines": {
     "node": ">=14.x",
     "yarn": ">=1"
