@@ -105,7 +105,7 @@
     "prettier": "3.2.5",
     "react-test-renderer": "^18.2.0",
     "sleep-promise": "^9.1.0",
-    "sort-package-json": "2.8.0",
+    "sort-package-json": "2.10.0",
     "storybook": "^7.6.18",
     "stylelint": "^15.11.0",
     "stylelint-a11y": "^1.2.3",
